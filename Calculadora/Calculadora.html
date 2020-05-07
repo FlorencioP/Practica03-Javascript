@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Calculadora Barata</title>
+    <link rel="stylesheet" type="text/css" href="diseño.css"/>
+    
+    <script type="text/javascript">
+        function add1(){
+            document.calc.Pant.value += 1
+            
+        }
+        function add2(){
+            document.calc.Pant.value += 2
+            
+        }
+        function add3(){
+            document.calc.Pant.value += 3
+            
+        }
+        function add4(){
+            document.calc.Pant.value += 4
+            
+        }
+        function add5(){
+            document.calc.Pant.value += 5
+            
+        }
+        function add6(){
+            document.calc.Pant.value += 6
+            
+        }
+        function add7(){
+            document.calc.Pant.value += 7
+            
+        }
+        function add8(){
+            document.calc.Pant.value += 8
+            
+        }
+        function add9(){
+            document.calc.Pant.value += 9
+            
+        }
+        function add0(){
+            document.calc.Pant.value += 0
+            
+        }
+        function adddiv(){
+            document.calc.Pant.value += "/"
+            
+        }
+        function borrar(){
+            document.calc.Pant.value = ""
+            
+        }
+        function mult(){
+            document.calc.Pant.value += "*"
+            
+        }
+        function resta(){
+            document.calc.Pant.value += "-"
+            
+        }
+        function adddec(){
+            document.calc.Pant.value += "."
+            
+        }
+        function respuesta(){
+            
+            var input = document.calc.Pant.value;
+
+            var resp = eval(input);
+
+            document.calc.Pant.value = resp
+
+            
+            
+        }
+        function suma(){
+            document.calc.Pant.value += "+"
+            
+        }
+
+   </script>  
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <h1>Calculadora Comoseharaequisde</h1>
+
+    <form name="calc">
+        <input type= "text" name="Pant" placeholder="Esta es la pantalla" readonly="readonly"> <br>
+    </form>
+    
+    <div>
+        <button onclick="add7()">7</button>
+        <button onclick="add8()">8</button>
+        <button onclick="add9()">9</button>
+        <button onclick="adddiv()">/</button>
+        <button onclick="borrar()">C</button> <br>
+
+
+        <button onclick="add4()">4</button>
+        <button onclick="add5()">5</button>
+        <button onclick="add6()">6</button>
+        <button onclick="mult()">*</button> <br>
+
+        <button onclick="add1()">1</button>
+        <button onclick="add2()">2</button>
+        <button onclick="add3()">3</button>
+        <button onclick="resta()">-</button> <br>
+
+        <button onclick="adddec()"> . </button>
+        <button onclick="add0()">0</button>
+        <button onclick="respuesta()">=</button>
+        <button onclick="suma()">+</button>   <br>
+    </div>
+
+
+
+</body>
+
+
+</html>
