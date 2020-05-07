@@ -1,0 +1,45 @@
+body {
+    background-color: cyan;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 150%;
+}
+
+#formulario01 fieldset{
+    background-color: white;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+#formulario01 fieldset legend{
+    font-size: 200%;
+    font-weight: bold;
+    border: solid black;
+    background-color: white;
+    margin-bottom: 0.5%;
+}
+#formulario01 fieldset label{
+    clear: both;
+    margin: 1%;
+    float: left;
+}
+
+#formulario01 fieldset input{
+    font-size: 100%;
+    margin: 1%;
+    width: 60%;
+    float: right;
+}
+
+
+form input{
+    font-size: 150%;
+    margin-top: 1%;
+}
+
+#formulario01 fieldset span{
+    font-size: 70%;
+}
+
+
+

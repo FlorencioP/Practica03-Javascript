@@ -12,7 +12,8 @@ function validarCamposObligatorios() {
                 elemento.className = 'error' 
                 bandera = false 
             } 
-        } 
+        }
+        
         if(!bandera){ 
             alert('Error: revisar los comentarios') 
         } 
