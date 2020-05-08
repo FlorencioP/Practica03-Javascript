@@ -5,6 +5,7 @@ button {
     margin-top: 0.3%;
     padding-left: 7%;
     padding-right: 7%;
+    width: 19%;
 }
 
 body{
@@ -21,5 +22,5 @@ input{
 
 div {
     text-align: left;
-    padding-left: 10%;
+    padding-left: 5%
 }

@@ -41,5 +41,7 @@ form input{
     font-size: 70%;
 }
 
-
+.error { 
+    color: red; font-size: 8px; 
+}
 
