@@ -45,3 +45,8 @@ form input{
     color: red; font-size: 8px; 
 }
 
+#formulario01 fieldset span{
+    float: left;
+    margin-left: 51%;
+    margin-top: -3%;
+}
