@@ -226,19 +226,35 @@ function validarApellidos(){
 
         
         if(valor2 == -1){
-
             document.getElementById('mensajeApellido').innerHTML = '' 
             apellidos.style.border = '1px black solid' 
             apellidos.className = 'none' 
             bandera = true
-
         }else{
-
             document.getElementById('mensajeApellido').innerHTML = '<br>Solo se permiten 2 apellidos' 
             apellidos.style.border = '1px red solid' 
             apellidos.className = 'error' 
             bandera = false 
-            
         }
     }
 }
+
+function validarTelefono(){
+    var cad = document.getElementById('telefono').value
+    console.log(cad)
+    if( /^\d{10}$/.test(cad) ){
+        document.getElementById('mensajeTelefono').innerHTML = '' 
+        telefono.style.border = '1px black solid' 
+        telefono.className = 'none' 
+        bandera = true
+    }else{
+        document.getElementById('mensajeTelefono').innerHTML = '<br>Ingrese un telefono de 10 Digitos' 
+        telefono.style.border = '1px red solid' 
+        telefono.className = 'error' 
+        bandera = false
+    }
+}
+
+
+
+

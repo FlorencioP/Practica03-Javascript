@@ -36,7 +36,7 @@
 
 
                 <label for="telefono">Teléfono (*):</label> 
-                <input type="text" id="telefono" name="telefono" value="" placeholder="Ingrese su número telefónico ..." /> <br>
+                <input type="text" id="telefono" name="telefono" value="" placeholder="Ingrese su número telefónico ..." onkeyup="return validarNumeros(this)" onchange="validarTelefono()"/> <br>
                 <span id="mensajeTelefono" class="error"></span> <br>
 
 
