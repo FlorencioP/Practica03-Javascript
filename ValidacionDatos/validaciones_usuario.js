@@ -64,10 +64,6 @@ function validarCedula(){
 }
 
 
-
-
-
-
 function validarCamposObligatorios() {
     bandera = true 
      
@@ -108,6 +104,9 @@ function validarCamposObligatorios() {
                 document.getElementById('mensajeCorreo').innerHTML = '<br>Este Campo se encuentra Vacio' 
             }
 
+            elemento.style.border = '1px red solid' 
+            elemento.className = 'error' 
+            bandera = false 
 
             
         } 
@@ -135,11 +134,12 @@ function validarLetras(elemento) {
         var miAscii = elemento.value.charCodeAt(elemento.value.length-1) 
         console.log(miAscii) 
             
-        if(miAscii >= 97 && miAscii <= 122 || miAscii == 32){ 
-            return true 
-        }else {
+        if(miAscii >= 48 && miAscii <= 57){ 
             elemento.value = elemento.value.substring(0, elemento.value.length-1)
-            return false 
+            return false
+        }else {
+             
+            return true 
         } 
     }else{ 
             
@@ -163,4 +163,52 @@ function validarNumeros(elemento) {
             
         return true 
     } 
+}
+
+
+function validarNombres(){
+    var cad = document.getElementById('nombres').value
+    console.log(cad) 
+    var valor = cad.indexOf(" ")
+    console.log(valor)
+
+    if(valor == -1){
+
+        document.getElementById('mensajeNombres').innerHTML = '<br>Por favor ingrese sus 2 nombres' 
+        
+        nombres.style.border = '1px red solid' 
+        nombres.className = 'error' 
+        bandera = false 
+
+    }else{
+
+        var sig = cad.charAt(valor + 1)
+
+        cad = cad.replace (" "+ sig , "" )
+        console.log(cad)
+
+        var valor2 = cad.indexOf(" ")
+
+        
+        if(valor2 == -1){
+
+            document.getElementById('mensajeNombres').innerHTML = '' 
+            nombres.style.border = '1px black solid' 
+            nombres.className = 'none' 
+            bandera = true
+
+        }else{
+
+            document.getElementById('mensajeNombres').innerHTML = '<br>Solo se permiten 2 nombres' 
+            nombres.style.border = '1px red solid' 
+            nombres.className = 'error' 
+            bandera = false 
+            
+        }
+   
+
+
+    }
+
+
 }
