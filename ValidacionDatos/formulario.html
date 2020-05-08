@@ -26,7 +26,7 @@
 
 
                 <label for="apellidos">Apelidos (*):</label> 
-                <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese sus dos apellidos ..." /> <br> 
+                <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese sus dos apellidos ..." onkeyup="return validarLetras(this)" onchange="validarApellidos()" /> <br> 
                 <span id="mensajeApellido" class="error"></span> <br>
 
 

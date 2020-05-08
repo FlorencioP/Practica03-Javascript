@@ -56,11 +56,6 @@ function validarCedula(){
         cedula.className = 'error' 
         bandera = false 
     }
-
-
-
-    
-
 }
 
 
@@ -126,8 +121,6 @@ function validarCamposObligatorios() {
     return bandera 
 } 
     
-
-
 
 function validarLetras(elemento) { 
     if(elemento.value.length > 0){ 
@@ -205,10 +198,47 @@ function validarNombres(){
             bandera = false 
             
         }
-   
-
-
     }
+}
 
+function validarApellidos(){
+    var cad = document.getElementById('apellidos').value
+    console.log(cad) 
+    var valor = cad.indexOf(" ")
+    console.log(valor)
 
+    if(valor == -1){
+
+        document.getElementById('mensajeApellido').innerHTML = '<br>Por favor ingrese sus 2 apellidos' 
+        
+        apellidos.style.border = '1px red solid' 
+        apellidos.className = 'error' 
+        bandera = false 
+
+    }else{
+
+        var sig = cad.charAt(valor + 1)
+
+        cad = cad.replace (" "+ sig , "" )
+        console.log(cad)
+
+        var valor2 = cad.indexOf(" ")
+
+        
+        if(valor2 == -1){
+
+            document.getElementById('mensajeApellido').innerHTML = '' 
+            apellidos.style.border = '1px black solid' 
+            apellidos.className = 'none' 
+            bandera = true
+
+        }else{
+
+            document.getElementById('mensajeApellido').innerHTML = '<br>Solo se permiten 2 apellidos' 
+            apellidos.style.border = '1px red solid' 
+            apellidos.className = 'error' 
+            bandera = false 
+            
+        }
+    }
 }
