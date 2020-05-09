@@ -1,0 +1,19 @@
+body{
+    background-color: cadetblue;
+    text-align: center;
+}
+
+img{
+    margin-top: 4%;
+    width: 800px;
+    height: 500px;
+}
+
+div{
+    margin-top: 2%;
+}
+button{
+    height: 50px;
+    width: 150px;
+    font-size: 140%;
+}
