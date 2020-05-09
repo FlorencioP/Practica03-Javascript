@@ -252,10 +252,48 @@ function validarMail(){
     }
 }
 function validarContra(){
-    
+    var cad = document.getElementById('contrasena').value;
+    var contra = cad.split("")
+    var v1 = false;
+    var v2 = false;
+    var v3 = false;
+    var v4 = false;
+    for(var i = 0; i < contra.length; i++){
+        
+        var letr = contra[i]
+        var miAscii = letr.charCodeAt(0)
+
+        if(cad.length >=8){
+            v1 = true;
+        }
+
+        if(miAscii >= 65 && miAscii <= 92){
+            v2 = true;
+        }
+
+        if(miAscii >= 97 && miAscii <= 122){
+            v3 = true;
+        }
+
+        if((miAscii >= 35 && miAscii <= 47) || (miAscii >= 58 && miAscii <= 64)||(miAscii >= 91 && miAscii <= 96)){
+            v4 = true;
+        }
+
+        if(v4 == true && v3 == true && v2 == true && v1 == true){           
+            document.getElementById('mensajeContra').innerHTML = '' 
+            contrasena.style.border = '1px black solid' 
+            contrasena.className = 'none' 
+            bandera = true
+        }else{
+            document.getElementById('mensajeContra').innerHTML = '<br>Ingrese una Contraseña Valida' 
+            contrasena.style.border = '1px red solid' 
+            contrasena.className = 'error' 
+            bandera = false
+        }
+
+    }
 
 }
-
 
 
 
