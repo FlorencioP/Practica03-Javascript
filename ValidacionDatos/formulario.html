@@ -41,17 +41,17 @@
 
 
                 <label for="fechaNacimiento">Fecha Nacimiento (*):</label>
-                <input type="text" id="fechaNacimiento" name="fechaNacimiento" value="" placeholder="Formato dd/mm/aaaa" onchange="validarFecha()" /> <br> 
+                <input type="text" id="fechaNacimiento" name="fechaNacimiento" value="" placeholder="Formato dd/mm/aaaa" onchange="validarFecha()"  onkeyup="return validarNumsF(this)"/> <br> 
                 <span id="mensajeFecha" class="error"></span> <br>
 
-
+                
                 <label for="correo">Correo electrónico (*):</label> 
-                <input type="text" id="correo" name="correo" value="" placeholder="Correo@est.ups.ecu.ec" /> <br> 
+                <input type="text" id="correo" name="correo" value="" placeholder="Correo@est.ups.ecu.ec" onchange="validarMail() "/> <br> 
                 <span id="mensajeCorreo" class="error"></span> <br>
 
 
                 <label for="correo">Contraseña (*):</label> 
-                <input type="password" id="contrasena" name="contrasena" value="" placeholder="Ingrese su contraseña ..." /> <br> 
+                <input type="password" id="contrasena" name="contrasena" value="" placeholder="Ingrese su contraseña ..." onchange="validarContra()" /> <br> 
                 <span id="mensajeContra" class="error"></span> <br>
 
 
