@@ -16,37 +16,37 @@
                 <legend>Formulario de Registro:</legend>
 
                 <label for="cedula">Cedula (*):</label> 
-                <input type="text" id="cedula" name="cedula" value="" placeholder="Ingrese el número de cedula ..." onkeyup="return validarNumeros(this)" onchange="validarCedula()"/>  <br>
+                <input type="text" id="cedula" name="cedula" value="" placeholder="Número de cedula" onkeyup="return validarNumeros(this)" onchange="validarCedula()"/>  <br>
                 <span id="mensajeCedula" class="error"></span> <br>
 
 
                 <label for="nombres">Nombres (*):</label>
-                <input type="text" id="nombres" name="nombres" value="" placeholder="Ingrese sus dos nombres ..." onkeyup="return validarLetras(this)" onchange="validarNombres()"/> <br>
+                <input type="text" id="nombres" name="nombres" value="" placeholder="Nombres (Los 2)" onkeyup="return validarLetras(this)" onchange="validarNombres()"/> <br>
                 <span id="mensajeNombres" class="error"></span> <br>
 
 
                 <label for="apellidos">Apelidos (*):</label> 
-                <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese sus dos apellidos ..." onkeyup="return validarLetras(this)" onchange="validarApellidos()" /> <br> 
+                <input type="text" id="apellidos" name="apellidos" value="" placeholder="Apellidos (Los 2)" onkeyup="return validarLetras(this)" onchange="validarApellidos()" /> <br> 
                 <span id="mensajeApellido" class="error"></span> <br>
 
 
                 <label for="direccion">Dirección (*):</label> 
-                <input type="text" id="direccion" name="direccion" value="" placeholder="Ingrese su dirección ..." /> <br> 
+                <input type="text" id="direccion" name="direccion" value="" placeholder="Dirección" /> <br> 
                 <span id="mensajeDireccion" class="error"></span> <br>
 
 
                 <label for="telefono">Teléfono (*):</label> 
-                <input type="text" id="telefono" name="telefono" value="" placeholder="Ingrese su número telefónico ..." onkeyup="return validarNumeros(this)" onchange="validarTelefono()"/> <br>
+                <input type="text" id="telefono" name="telefono" value="" placeholder="Telefono (10 Digitos)" onkeyup="return validarNumeros(this)" onchange="validarTelefono()"/> <br>
                 <span id="mensajeTelefono" class="error"></span> <br>
 
 
                 <label for="fechaNacimiento">Fecha Nacimiento (*):</label>
-                <input type="text" id="fechaNacimiento" name="fechaNacimiento" value="" placeholder="Ingrese su fecha de nacimiento ..." /> <br> 
+                <input type="text" id="fechaNacimiento" name="fechaNacimiento" value="" placeholder="Formato dd/mm/aaaa" onchange="validarFecha()" /> <br> 
                 <span id="mensajeFecha" class="error"></span> <br>
 
 
                 <label for="correo">Correo electrónico (*):</label> 
-                <input type="text" id="correo" name="correo" value="" placeholder="Ingrese su correo electrónico ..." /> <br> 
+                <input type="text" id="correo" name="correo" value="" placeholder="Correo@est.ups.ecu.ec" /> <br> 
                 <span id="mensajeCorreo" class="error"></span> <br>
 
 

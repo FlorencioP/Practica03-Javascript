@@ -60,7 +60,6 @@ function validarCedula(){
 
 
 function validarCamposObligatorios() {
-    bandera = true 
      
     for(var i = 0; i < document.forms[0].elements.length; i++){
         var elemento = document.forms[0].elements[i] 
@@ -114,8 +113,8 @@ function validarCamposObligatorios() {
     }
 
     
-    if(!bandera){ 
-        alert('Error: revisar los comentarios') 
+    if(bandera == false){ 
+        alert('Registro Fallido: Por favor revise sus datos') 
     } 
         
     return bandera 
@@ -254,6 +253,27 @@ function validarTelefono(){
         bandera = false
     }
 }
+
+function validarFecha(){
+
+    var cad = document.getElementById('fechaNacimiento').value
+    console.log(cad)
+    if(   /^(?:3[01]|[12][0-9]|0?[1-9])([-/.])(0?[1-9]|1[1-2])\1\d{4}$/.test(cad) ){
+
+        document.getElementById('mensajeFecha').innerHTML = '' 
+        fechaNacimiento.style.border = '1px black solid' 
+        fechaNacimiento.className = 'none' 
+        bandera = true
+    }else{
+        document.getElementById('mensajeFecha').innerHTML = '<br>Ingrese una fecha valida' 
+        fechaNacimiento.style.border = '1px red solid' 
+        fechaNacimiento.className = 'error' 
+        bandera = false
+    }
+
+
+}
+
 
 
 
