@@ -75,14 +75,26 @@ function validarCamposObligatorios() {
         if(elemento.value == '' && elemento.type == 'password'){
             if(elemento.id == 'contrasena'){
                 document.getElementById('mensajeContra').innerHTML = '<br>Ingrese Una contraseña' 
+                elemento.style.border = '1px red solid' 
+                elemento.className = 'error' 
+                bandera = false
             }
         }
     }
+
+    if(bandera == true){
+        console.log("ACEPTADO")  
+
+        window.open("fomularioCompleto.php","_blank")
+    }
+
     if(bandera == false){ 
         alert('Registro Fallido: Por favor revise sus datos') 
-    }    
-    return bandera 
+    }
+    
+    return bandera
 } 
+
 function validarLetras(elemento) { 
     if(elemento.value.length > 0){ 
         var miAscii = elemento.value.charCodeAt(elemento.value.length-1) 
@@ -291,9 +303,23 @@ function validarContra(){
             bandera = false
         }
 
+
+
     }
 
 }
 
+function validarDir(){
+
+    if(direccion.value == ''){
+
+    }else{
+        document.getElementById('mensajeDireccion').innerHTML = '' 
+        direccion.style.border = '1px black solid' 
+        direccion.className = 'none' 
+        bandera = true
+    }
+
+}
 
 
