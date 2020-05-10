@@ -5,8 +5,6 @@
 </head> 
 
 <body>
-
-
     <?php 
     $uno = "Bienvenido";
     $dos = ", pasaste las ";

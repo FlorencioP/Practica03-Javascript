@@ -204,8 +204,6 @@ function validarTelefono(){
         bandera = false
     }
 }
-
-
 function validarFecha(){
     var cad = document.getElementById('fechaNacimiento').value
     console.log(cad)
@@ -297,13 +295,8 @@ function validarContra(){
             contrasena.className = 'error' 
             bandera = false
         }
-
-
-
     }
-
 }
-
 function validarDir(){
 
     if(direccion.value == ''){
