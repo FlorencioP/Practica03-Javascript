@@ -3,21 +3,53 @@ body{
     text-align: center;
 }
 
+
 #pantall{
+    float: left;
     margin-top: 4%;
-    width: 800px;
-    height: 500px;
-}
-#pantall img{
-    width: 100%;
-    height: 100%;
-    margin-left: 43%;
+   
 }
 
+#pantall img {
+    width: 800px;
+    height: 500px;
+    border: thick black solid;
+}
+
+
 #botons{
-    margin-top: 2%;
+    clear: both;
+    padding-top: 43%;
 }
 #botons button{
     font-size: 140%;
-    width: 15%;
+    width:15%;
+}
+
+#pantall #imgactual{
+    display: block;
+    
+    position: fixed;
+    /*right: 23%; VALOR CENTRADO */ 
+    right:17.5%;
+
+}
+
+
+#pantall #imgder{
+   display: none;
+    
+    position: fixed;
+    /*right: 17.5%; VALOR CENTRADO */ 
+    right:0;
+
+}
+
+#pantall #imgizq{
+   display: none;
+    
+    position: fixed;
+    /*right: 17.5%; VALOR CENTRADO */
+    right:0;
+
 }
