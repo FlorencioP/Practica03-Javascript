@@ -19,7 +19,7 @@ body{
 
 #botons{
     clear: both;
-    padding-top: 43%;
+    padding-top: 38%;
 }
 #botons button{
     font-size: 140%;
@@ -31,7 +31,7 @@ body{
     
     position: fixed;
     /*right: 23%; VALOR CENTRADO */ 
-    right:17.5%;
+    right:23.2%;
 
 }
 

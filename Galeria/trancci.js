@@ -22,7 +22,7 @@ function der(){
         num = num +1.4
         document.getElementById("anter").disabled = true;
         document.getElementById("sig").disabled = true;
-        if (num >= 17.5) {
+        if (num >= 23.2) {
             clearInterval(derch);
             document.getElementById('imgder').style.display = 'none';
             dipsAct=dipsAct +1
@@ -51,7 +51,7 @@ function izq(){
         num = num -1.4
         document.getElementById("anter").disabled = true;
         document.getElementById("sig").disabled = true;
-        if (num <= 17.5) {
+        if (num <= 23.2) {
             clearInterval(izqch);
             document.getElementById('imgizq').style.display = 'none';
             dipsAct=dipsAct -1
