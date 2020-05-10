@@ -82,11 +82,6 @@ function validarCamposObligatorios() {
         }
     }
 
-    if(bandera == true){
-        console.log("ACEPTADO")  
-
-        window.open("fomularioCompleto.php","_blank")
-    }
 
     if(bandera == false){ 
         alert('Registro Fallido: Por favor revise sus datos') 

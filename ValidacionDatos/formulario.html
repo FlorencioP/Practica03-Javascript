@@ -10,14 +10,14 @@
     
     <body> 
 
-        <form id="formulario01" method="POST" action="" onsubmit="return validarCamposObligatorios() " >
+        <form id="formulario01" method="POST" action="fomularioCompleto.php" onsubmit="return validarCamposObligatorios() " >
             
             <fieldset>
                 <legend>Formulario de Registro:</legend>
 
                 <label for="cedula">Cedula (*):</label> 
                 <input type="text" id="cedula" name="cedula" value="" placeholder="Número de cedula" onkeyup="return validarNumeros(this)" onchange="validarCedula()"/>  <br>
-                <span id="mensajeCedula" class="error"></span> <br>
+                <span id="mensajeCedula" class="error"></span> <br> 
 
 
                 <label for="nombres">Nombres (*):</label>

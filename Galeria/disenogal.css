@@ -3,17 +3,21 @@ body{
     text-align: center;
 }
 
-img{
+#pantall{
     margin-top: 4%;
     width: 800px;
     height: 500px;
 }
+#pantall img{
+    width: 100%;
+    height: 100%;
+    margin-left: 43%;
+}
 
-div{
+#botons{
     margin-top: 2%;
 }
-button{
-    height: 50px;
-    width: 150px;
+#botons button{
     font-size: 140%;
+    width: 15%;
 }
