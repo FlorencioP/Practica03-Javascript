@@ -86,19 +86,20 @@ Funcion Eval() Aplicada:
 Validaciones de la Paginas:
 -Formulario
 HTML
- ![33](/READMEIMG/35.png?raw=true "Title")
-CSS
- ![34](/READMEIMG/36.png?raw=true "Title")
-
--Galería
-HTML
  ![35](/READMEIMG/35.png?raw=true "Title")
 CSS
  ![36](/READMEIMG/36.png?raw=true "Title")
+-Galería
+HTML
+ ![37](/READMEIMG/37.png?raw=true "Title")
 
+
+
+CSS
+ ![38](/READMEIMG/38.png?raw=true "Title")
 -Calculadora
  HTML
- ![37](/READMEIMG/37.png?raw=true "Title")
+ ![39](/READMEIMG/39.png?raw=true "Title")
 CSS
-  ![38](/READMEIMG/38.png?raw=true "Title")
+ ![40](/READMEIMG/40.png?raw=true "Title")
 
